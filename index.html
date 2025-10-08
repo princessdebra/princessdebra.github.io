@@ -4,14 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>Princess Debra — Fraud Detection & Data Projects</title>
-  <meta name="description" content="Princess Debra — final-year Applied Computer Science student at Daystar University. Projects: Fraud Detection Model, Streamlit dashboards, and data-driven analytics." />
+  <title>Princess Debra Jeruto Kiptoo | Data Science & Machine Learning Specialist</title>
+  <meta name="description" content="Princess Debra Jeruto Kiptoo - Applied Computer Science student specializing in fraud detection systems, data analytics, and machine learning solutions." />
   <meta name="author" content="Princess Debra Jeruto Kiptoo" />
   <link rel="canonical" href="https://princessdebra.github.io/" />
 
   <!-- OpenGraph / Social -->
-  <meta property="og:title" content="Princess Debra — Fraud Detection & Data Projects" />
-  <meta property="og:description" content="Final-year Applied Computer Science student (Daystar University). Focus: fraud detection, interactive dashboards, and reproducible analytics." />
+  <meta property="og:title" content="Princess Debra Jeruto Kiptoo | Data Science & Machine Learning Specialist" />
+  <meta property="og:description" content="Applied Computer Science student specializing in fraud detection systems, data analytics, and machine learning solutions." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://princessdebra.github.io/" />
   <!-- Optional: replace with a hosted image -->
@@ -19,8 +19,8 @@
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Princess Debra — Fraud Detection & Data Projects" />
-  <meta name="twitter:description" content="Final-year Applied Computer Science student (Daystar University). Projects: Fraud Detection Model, Streamlit dashboards, and reproducible analytics." />
+  <meta name="twitter:title" content="Princess Debra Jeruto Kiptoo | Data Science & Machine Learning Specialist" />
+  <meta name="twitter:description" content="Applied Computer Science student specializing in fraud detection systems, data analytics, and machine learning solutions." />
 
   <!-- JSON-LD (structured data) -->
   <script type="application/ld+json">
@@ -31,137 +31,384 @@
     "url": "https://princessdebra.github.io/",
     "sameAs": [
       "https://github.com/princessdebra",
-      "https://princessdebraportfolio.netlify.app/"
+      "https://princessdebraportfolio.netlify.app/",
+      "https://www.linkedin.com/in/princess-debra-jeruto-kiptoo-8b7b5b1b4/"
     ],
-    "jobTitle": "Final-year Applied Computer Science student",
-    "alumniOf": "Daystar University"
+    "jobTitle": "Applied Computer Science Student",
+    "alumniOf": "Daystar University",
+    "knowsAbout": ["Machine Learning", "Fraud Detection", "Data Analytics", "Python", "Streamlit"],
+    "description": "Final-year Applied Computer Science student specializing in fraud detection systems and data-driven solutions."
   }
   </script>
 
   <style>
-    :root{
-      --accent:#c4171b;
-      --muted:#6b7280;
-      --bg:#f6f7fb;
-      --card:#fff;
-      --maxw:1100px;
-      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --accent: #dc2626;
+      --text: #0f172a;
+      --text-light: #475569;
+      --text-muted: #64748b;
+      --bg: #ffffff;
+      --card-bg: #f8fafc;
+      --border: #e2e8f0;
+      --maxw: 1200px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     }
-    html,body{height:100%;margin:0;background:var(--bg); color:#0f172a;-webkit-font-smoothing:antialiased}
-    .wrap{max-width:var(--maxw);margin:36px auto;padding:28px;}
-    header{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-    .hero{flex:1;min-width:260px}
-    h1{margin:0;font-size:30px;line-height:1.05}
-    p.lead{margin:8px 0;color:var(--muted);font-size:15px}
-    .badge{background:var(--accent);color:#fff;padding:6px 12px;border-radius:8px;font-weight:700;display:inline-block}
-    .grid{display:grid;grid-template-columns:repeat(2, 1fr);gap:18px;margin-top:28px}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 24px rgba(2,6,23,0.06);min-height:140px}
-    .card h3{margin:0 0 8px 0;font-size:18px}
-    .meta{font-size:13px;color:var(--muted);margin:6px 0}
-    a{color:var(--accent);text-decoration:none}
-    footer{margin-top:32px;color:var(--muted);font-size:13px;text-align:center}
-    .links{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace; font-size:13px; color: #374151}
-    .highlight { background: linear-gradient(90deg, rgba(196,23,27,0.08), rgba(196,23,27,0.02)); border-left:4px solid var(--accent); padding:14px; border-radius:8px; }
-    .big-cta { display:inline-block; background:var(--accent); color:white; padding:10px 14px; border-radius:10px; font-weight:700; text-decoration:none; }
-    .repo-list { margin:8px 0 0 18px; color:var(--muted) }
-    .repo-list li { margin:6px 0 }
-    @media (max-width:900px){.grid{grid-template-columns:repeat(1,1fr)}; h1{font-size:24px}}
+    
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+    
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+    
+    header {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+    }
+    
+    .hero {
+      flex: 1;
+      min-width: 300px;
+    }
+    
+    h1 {
+      margin: 0 0 12px 0;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text);
+    }
+    
+    .title {
+      color: var(--primary);
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    
+    .lead {
+      margin: 0 0 24px 0;
+      color: var(--text-light);
+      font-size: 18px;
+      max-width: 600px;
+    }
+    
+    .badge {
+      background: var(--primary);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    
+    .card {
+      background: var(--card-bg);
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(2, 6, 23, 0.08);
+    }
+    
+    .card h3 {
+      margin: 0 0 12px 0;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    
+    .meta {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin: 8px 0;
+    }
+    
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    
+    a:hover {
+      color: var(--primary-dark);
+    }
+    
+    footer {
+      margin-top: 60px;
+      color: var(--text-muted);
+      font-size: 14px;
+      text-align: center;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    
+    .links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin: 24px 0;
+    }
+    
+    .contact-info {
+      min-width: 220px;
+    }
+    
+    .contact-info div {
+      margin-bottom: 8px;
+    }
+    
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    
+    .btn:hover {
+      background: var(--primary-dark);
+      color: white;
+    }
+    
+    .btn-accent {
+      background: var(--accent);
+    }
+    
+    .btn-accent:hover {
+      background: #b91c1c;
+    }
+    
+    .repo-list {
+      margin: 16px 0 0 0;
+      padding-left: 0;
+      list-style: none;
+    }
+    
+    .repo-list li {
+      margin: 12px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+    
+    .repo-list li:before {
+      content: "•";
+      color: var(--primary);
+      position: absolute;
+      left: 0;
+    }
+    
+    .featured {
+      border-left: 4px solid var(--accent);
+    }
+    
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0;
+    }
+    
+    .skill-tag {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-light);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 24px;
+      }
+      
+      h1 {
+        font-size: 28px;
+      }
+      
+      .contact-info {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="hero" aria-label="Site introduction">
-        <div style="display:flex;align-items:center;gap:14px;margin-bottom:8px">
-          <div class="badge">Applied Computer Science · Data · ML</div>
-          <div style="flex:1">
-            <h1>Princess Debra Jeruto Kiptoo</h1>
-            <p class="lead">Final-year Applied Computer Science student, Daystar University. I build reproducible analytics, explainable fraud detection systems, and interactive dashboards (Streamlit).</p>
-          </div>
-        </div>
-
-        <div class="links" aria-hidden="false">
+      <div class="hero">
+        <div class="badge">Applied Computer Science · Data Science · Machine Learning</div>
+        <h1>Princess Debra Jeruto Kiptoo</h1>
+        <p class="lead">Final-year Applied Computer Science student at Daystar University, specializing in data-driven solutions, fraud detection systems, and reproducible analytics.</p>
+        
+        <div class="links">
           <a href="https://github.com/princessdebra" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://github.com/princessdebra/Fraud-Detection-Model" target="_blank" rel="noopener">Fraud Detection Model (repo)</a>
-          <a href="https://princessdebraportfolio.netlify.app/" target="_blank" rel="noopener">Portfolio (Netlify)</a>
+          <a href="https://www.linkedin.com/in/princess-debra-jeruto-kiptoo-8b7b5b1b4/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://princessdebraportfolio.netlify.app/" target="_blank" rel="noopener">Portfolio</a>
         </div>
       </div>
 
-      <div style="min-width:220px; text-align:right;">
-        <div class="mono">Location: Nairobi, Kenya</div>
-        <div class="meta" style="margin-top:10px">Email: <a href="mailto:debzziiie@gmail.com">debzziiie@gmail.com</a></div>
-        <div style="margin-top:12px"><a class="big-cta" href="https://github.com/princessdebra/Fraud-Detection-Model" target="_blank" rel="noopener">View Fraud Detection Repo</a></div>
+      <div class="contact-info">
+        <div><strong>Location:</strong> Nairobi, Kenya</div>
+        <div><strong>Email:</strong> <a href="mailto:debzziiie@gmail.com">debzziiie@gmail.com</a></div>
+        <div style="margin-top: 16px;">
+          <a class="btn" href="https://github.com/princessdebra/Fraud-Detection-Model" target="_blank" rel="noopener">View Fraud Detection Project</a>
+        </div>
       </div>
     </header>
 
     <main>
-      <div class="grid" role="list">
-        <!-- FEATURED: Fraud Detection -->
-        <section class="card highlight" role="listitem" aria-label="Featured: Fraud Detection Project">
-          <h3>Featured — Fraud Detection Model (Priority)</h3>
-          <p class="meta"><strong>Why this project?</strong> This is my capstone-level work: hybrid anomaly detection, frozen scorer for production scoring, explanation module, and a Streamlit interface for analyst workflows.</p>
-
-          <p class="meta"><strong>Repo:</strong> <a href="https://github.com/princessdebra/Fraud-Detection-Model" target="_blank" rel="noopener">github.com/princessdebra/Fraud-Detection-Model</a></p>
-
-          <ul class="repo-list" aria-label="fraud repo highlights">
-            <li><strong>Core:</strong> `score_runtime.py` — feature engineering + frozen scorer with explainability.</li>
-            <li><strong>UI:</strong> `Fraud_fin.py` — Streamlit dashboard to upload data, score claims, and triage flagged items.</li>
-            <li><strong>Artifacts:</strong> model files (joblib / autoencoder), tuning JSON, and a project proposal (DOCX) in the repo.</li>
-          </ul>
-
-          <p class="meta" style="margin-top:10px"><strong>Status:</strong> Source-only (no public demo). If you want, I can help you produce a Dockerfile / Render/Cloud Run instructions to host the Streamlit demo later.</p>
-        </section>
-
-        <!-- Other Projects -->
-        <section class="card" role="listitem" aria-label="Other Projects">
-          <h3>Other projects & experiments</h3>
-          <p class="meta">A selection of repositories and experiments that complement my fraud work.</p>
+      <div class="grid">
+        <!-- Featured: Fraud Detection -->
+        <section class="card featured">
+          <h3>Fraud Detection System</h3>
+          <p class="meta">Advanced hybrid anomaly detection model for identifying fraudulent insurance claims with explainable AI components.</p>
+          
+          <div class="skills">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Streamlit</span>
+            <span class="skill-tag">Anomaly Detection</span>
+          </div>
+          
           <ul class="repo-list">
-            <li><a href="https://github.com/princessdebra" target="_blank" rel="noopener">GitHub profile</a> — collection of small utilities, dashboards, and learning notebooks.</li>
-            <!-- If you want to list specific extra repos, I can add them here -->
-            <li><a href="https://github.com/princessdebra/react-ecommerce-dashboard" target="_blank" rel="noopener">React E-commerce Dashboard</a> — frontend dashboard prototypes (if present).</li>
-            <li><a href="https://github.com/princessdebra/fraud-detection-repo" target="_blank" rel="noopener">Fraud Detection Research</a> — research notebooks & experiments (if present).</li>
+            <li>Hybrid model combining isolation forest, k-means distance, and autoencoder</li>
+            <li>Streamlit dashboard for claims processing and investigation workflow</li>
+            <li>Feature engineering pipeline with explainability module</li>
+            <li>Production-ready scoring system with frozen model artifacts</li>
           </ul>
-
-          <p class="meta" style="margin-top:10px">Tip: add a short `README.md` to the Fraud repo top-level summarizing how to run the Streamlit app and the model file locations — that helps reviewers jump in quickly.</p>
+          
+          <div style="margin-top: 20px;">
+            <a class="btn btn-accent" href="https://github.com/princessdebra/Fraud-Detection-Model" target="_blank" rel="noopener">View Repository</a>
+          </div>
         </section>
 
-        <!-- Portfolio & Docs -->
-        <section class="card" role="listitem" aria-label="Portfolio & docs">
-          <h3>Portfolio & Documents</h3>
-          <p class="meta">Your main portfolio is live on Netlify. This GitHub page focuses on code and reproducibility.</p>
-          <p class="meta"><a href="https://princessdebraportfolio.netlify.app/" target="_blank" rel="noopener">Visit full portfolio</a></p>
-          <p class="meta" style="margin-top:8px">Project proposal inside repo: <a href="https://github.com/princessdebra/Fraud-Detection-Model/blob/main/PROJECT%20PROPOSAL-PRINCESS%20DEBRA%20JERUTO%20KIPTOO.docx" target="_blank" rel="noopener">PROJECT PROPOSAL (docx)</a></p>
+        <!-- React E-commerce Dashboard -->
+        <section class="card">
+          <h3>E-commerce Analytics Dashboard</h3>
+          <p class="meta">Interactive React-based dashboard for visualizing e-commerce metrics and business intelligence.</p>
+          
+          <div class="skills">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Data Visualization</span>
+            <span class="skill-tag">UI/UX</span>
+          </div>
+          
+          <ul class="repo-list">
+            <li>Responsive dashboard with multiple visualization components</li>
+            <li>Real-time data updates and interactive filtering</li>
+            <li>Clean, modern UI with focus on user experience</li>
+            <li>Modular component architecture for maintainability</li>
+          </ul>
+          
+          <div style="margin-top: 20px;">
+            <a class="btn" href="https://github.com/princessdebra/react-ecommerce-dashboard" target="_blank" rel="noopener">View Repository</a>
+          </div>
         </section>
 
-        <!-- Contact & Next Steps -->
-        <section class="card" role="listitem" aria-label="Contact & next steps">
-          <h3>Contact & next steps</h3>
-          <p class="meta">Looking for collaborations, internships, or mentorship opportunities. I can provide cleaned datasets, reproducible notebooks, and a deployable demo on request.</p>
-          <p class="meta">If you review the Fraud repo and want a walkthrough, I can produce: a README walkthrough, a short demo video, or a Dockerfile + start script.</p>
-          <p class="meta" style="margin-top:8px">Preferred contact: <a href="mailto:replace_with_your_email@example.com">replace_with_your_email@example.com</a></p>
+        <!-- Data Analysis Portfolio -->
+        <section class="card">
+          <h3>Data Analysis Portfolio</h3>
+          <p class="meta">Collection of data analysis projects demonstrating statistical analysis and business insights.</p>
+          
+          <div class="skills">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">Data Visualization</span>
+            <span class="skill-tag">Statistical Analysis</span>
+          </div>
+          
+          <ul class="repo-list">
+            <li>Exploratory data analysis with actionable insights</li>
+            <li>Statistical modeling and hypothesis testing</li>
+            <li>Interactive visualizations and reporting</li>
+            <li>Reproducible analysis workflows</li>
+          </ul>
+          
+          <div style="margin-top: 20px;">
+            <a class="btn" href="https://github.com/princessdebra" target="_blank" rel="noopener">View GitHub Profile</a>
+          </div>
         </section>
       </div>
 
-      <!-- Detailed notes section (visible to reviewers) -->
-      <div style="margin-top:22px" class="card" aria-label="Detailed repo notes">
-        <h3 style="margin-bottom:8px">Quick technical notes for reviewers</h3>
-        <div class="meta">
-          <ul>
-            <li><strong>Feature engineering:</strong> `build_features` in `score_runtime.py` — vectorized feature creation, robust handling of missing columns, benefit flags, provider statistics, and claimant-based aggregations.</li>
-            <li><strong>Scoring:</strong> The scorer combines isolation forest, k-means distance, and an optional autoencoder — outputs `combined_anomaly_score` and `needs_review`.</li>
-            <li><strong>Explainability:</strong> `generate_explanation` and `compose_reason` produce human-readable reasons and recommended actions for flagged claims.</li>
-            <li><strong>UI:</strong> `Fraud_fin.py` — upload CSV/Excel, process with scorer, view flagged claims, export results, and assign claims to investigators.</li>
-          </ul>
+      <!-- Technical Expertise Section -->
+      <div style="margin-top: 60px;">
+        <h2 style="font-size: 24px; margin-bottom: 24px;">Technical Expertise</h2>
+        <div class="grid">
+          <section class="card">
+            <h3>Machine Learning & AI</h3>
+            <ul class="repo-list">
+              <li>Anomaly Detection Systems</li>
+              <li>Predictive Modeling</li>
+              <li>Feature Engineering</li>
+              <li>Model Explainability</li>
+            </ul>
+          </section>
+          
+          <section class="card">
+            <h3>Data Analytics</h3>
+            <ul class="repo-list">
+              <li>Exploratory Data Analysis</li>
+              <li>Statistical Analysis</li>
+              <li>Data Visualization</li>
+              <li>Business Intelligence</li>
+            </ul>
+          </section>
+          
+          <section class="card">
+            <h3>Software Development</h3>
+            <ul class="repo-list">
+              <li>Python Programming</li>
+              <li>Web Applications (Streamlit)</li>
+              <li>Frontend Development (React)</li>
+              <li>Version Control (Git)</li>
+            </ul>
+          </section>
         </div>
       </div>
-
     </main>
 
     <footer>
-      <div>© <strong>Princess Debra Jeruto Kiptoo</strong> — Final-year Applied Computer Science, Daystar University</div>
-      <div style="margin-top:8px"><a href="https://github.com/princessdebra" target="_blank" rel="noopener">github.com/princessdebra</a> · <a href="https://princessdebraportfolio.netlify.app/" target="_blank" rel="noopener">portfolio</a></div>
+      <div>© <strong>Princess Debra Jeruto Kiptoo</strong> — Applied Computer Science Student, Daystar University</div>
+      <div style="margin-top: 12px;">
+        <a href="https://github.com/princessdebra" target="_blank" rel="noopener">GitHub</a> · 
+        <a href="https://www.linkedin.com/in/princess-debra-jeruto-kiptoo-8b7b5b1b4/" target="_blank" rel="noopener">LinkedIn</a> · 
+        <a href="https://princessdebraportfolio.netlify.app/" target="_blank" rel="noopener">Portfolio</a> · 
+        <a href="mailto:debzziiie@gmail.com">Email</a>
+      </div>
     </footer>
   </div>
 </body>
